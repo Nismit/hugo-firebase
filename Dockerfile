@@ -1,6 +1,6 @@
-FROM node:13.5-alpine
+FROM node:14.4.0-alpine
 
-ENV HUGO_VERSION 0.61.0
+ENV HUGO_VERSION 0.73.0
 
 RUN apk add --no-cache git openssl py-pygments curl \
     && curl -L https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz | tar -xz \
